@@ -18,7 +18,7 @@ public class Singleton_DoubleLockingStaticBlock {
 		if(instance==null){
 			synchronized(Singleton_DoubleLockingStaticBlock.class){
 				if(instance==null){
-					instance=new Singleton_DoubleLockingStaticBlock();
+					instance=new Singleton_DoubleLockingStaticBlock(); 	
 				}
 				
 			}
