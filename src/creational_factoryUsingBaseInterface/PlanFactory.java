@@ -1,4 +1,4 @@
-package creational_factory;
+package creational_factoryUsingBaseInterface;
 
 public class PlanFactory {
 	PlanInterface getPlan(String planType){
