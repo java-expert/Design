@@ -1,4 +1,4 @@
-package Factory;
+package creational_factory;
 
 public class CorporatePlan implements Plan{
 

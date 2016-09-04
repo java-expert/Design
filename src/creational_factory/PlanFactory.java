@@ -1,4 +1,4 @@
-package Factory;
+package creational_factory;
 
 public class PlanFactory {
 	Plan getPlan(String planType){

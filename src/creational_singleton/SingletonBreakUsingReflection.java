@@ -9,30 +9,30 @@ possible way for specific situations.*/
 /*Singleton pattern restricts the instantiation of a class and ensures that only
 one instance of the class exists in the java virtual machine.*/
 
-public class Singleton_ReflectionTest {
-	private static final Singleton_ReflectionTest instance=new Singleton_ReflectionTest();
+public class SingletonBreakUsingReflection {
+	private static final SingletonBreakUsingReflection instance=new SingletonBreakUsingReflection();
 
-	private Singleton_ReflectionTest(){
+	private SingletonBreakUsingReflection(){
 		
 	}
 	public void displayHash(){
 		System.out.println(this.hashCode());
 	}
-	static public Singleton_ReflectionTest getInstance(){
+	static public SingletonBreakUsingReflection getInstance(){
 		return instance;
 	}
 	public static void main(String[] args) {
-		Singleton_ReflectionTest obj1=Singleton_ReflectionTest.getInstance();
-		Singleton_ReflectionTest obj2=Singleton_ReflectionTest.getInstance();
+		SingletonBreakUsingReflection obj1=SingletonBreakUsingReflection.getInstance();
+		SingletonBreakUsingReflection obj2=SingletonBreakUsingReflection.getInstance();
 		System.out.println(obj1.hashCode());
 		System.out.println(obj2.hashCode());
-		Singleton_ReflectionTest obj3=null;
-		Constructor[] constructors =Singleton_ReflectionTest.class.getDeclaredConstructors();
+		SingletonBreakUsingReflection obj3=null;
+		Constructor[] constructors =SingletonBreakUsingReflection.class.getDeclaredConstructors();
 		for (Constructor constructor : constructors) {
 			//Below code will destroy the singleton pattern
 			constructor.setAccessible(true);
 			try {
-				obj3=(Singleton_ReflectionTest) constructor.newInstance(null);
+				obj3=(SingletonBreakUsingReflection) constructor.newInstance(null);
 			} catch (InstantiationException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
