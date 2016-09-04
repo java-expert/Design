@@ -1,6 +1,6 @@
 package creational_factory;
 
-public interface Plan {
+public interface PlanInterface {
 	void displayPlan();
 
 }

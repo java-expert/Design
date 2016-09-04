@@ -1,6 +1,6 @@
 package creational_factory;
 
-public class CorporatePlan implements Plan{
+public class CorporatePlan implements PlanInterface{
 
 	@Override
 	public void displayPlan() {
