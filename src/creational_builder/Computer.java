@@ -64,5 +64,20 @@ public class Computer {
 		Computer c=new Computer.ComputerBuilder("1tb", "processor").setBluetoothEnabled(true).build();
 		System.out.println(c.getHdd()+c.getProcessor()+c.isBluetoothEnabled+c.isGraphicsCardEnabled);
 	}
-
 }
+
+/*
+Guidelines for Builder design pattern in Java
+1) Make a static nested class called Builder inside the class whose object will be build by Builder. In this example its Cake.
+
+2) Builder class will have exactly same set of fields as original class.
+3) Builder class will expose method for adding optional parametrs 
+each method will return same Builder object. 
+Builder will be enriched with each method call.
+
+4) Builder.build() method will copy all builder field values into actual class and return object of Item class.
+5) Item class (class for which we are creating Builder) should have private constructor to create its object from build() method and prevent outsider to access its constructor
+
+Read more: http://javarevisited.blogspot.com/2012/06/builder-design-pattern-in-java-example.html#ixzz4JxkYlfOe
+
+*/
