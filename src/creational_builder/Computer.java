@@ -79,5 +79,5 @@ Builder will be enriched with each method call.
 5) Item class (class for which we are creating Builder) should have private constructor to create its object from build() method and prevent outsider to access its constructor
 
 Read more: http://javarevisited.blogspot.com/2012/06/builder-design-pattern-in-java-example.html#ixzz4JxkYlfOe
-
+http://javarevisited.blogspot.in/2012/06/builder-design-pattern-in-java-example.html
 */
